@@ -23,6 +23,7 @@ db = SQLAlchemy(app)
 
 from .models import Pet
 
+db.create_all()
 
 # create route that renders index.html template
 @app.route("/")
